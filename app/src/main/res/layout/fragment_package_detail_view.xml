@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".package_detail_view">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:indeterminate="true"
+
+        android:visibility="visible" />
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:id="@+id/package_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:visibility="invisible"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tittle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                android:gravity="center"
+                android:padding="25dp"
+                android:text="Package Details"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"
+                android:textSize="35sp" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="15dp"
+                android:layout_below="@+id/tittle"
+                app:cardElevation="5dp"
+
+                android:id="@+id/card_view_img">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/img_url_d"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/bck_rounded"
+
+
+                    />
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/p_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_view_img"
+                android:layout_marginLeft="10dp"
+
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="KLKK"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"/>
+
+
+
+            <TextView
+                android:id="@+id/from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/p_id"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:text="From"
+                android:textSize="15sp"
+
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+
+                />
+
+            <TextView
+                android:id="@+id/to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/p_id"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="4dp"
+                android:padding="5dp"
+                android:text="Destination"
+                android:textSize="15sp"
+
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"/>
+
+            <TextView
+                android:id="@+id/starting_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/from"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:text="Delhi"
+                android:fontFamily="serif-monospace"
+
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/location_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/to"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="4dp"
+                android:gravity="center"
+                android:fontFamily="serif-monospace"
+
+                android:padding="5dp"
+                android:text="Chennai"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/des_tag"
+                android:layout_below="@+id/hotel_name_ll">
+                <TextView
+                    android:id="@+id/description_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="Description"
+
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="start"
+                    android:padding="5dp"
+                    android:layout_marginStart="20dp"
+                    android:text="good service"
+                    android:fontFamily="casual"
+
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/hotel_name_ll"
+                android:layout_below="@+id/location_name"
+
+                >
+            <TextView
+                android:id="@+id/hotel_name_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="4dp"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Hotel Name"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/hotel_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="left"
+                android:padding="5dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="casual"
+
+                android:text="Hyatt"
+                android:textSize="25sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/no_of_days_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/des_tag"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="4dp"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text="No of Days"
+                android:textSize="20sp"
+
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/no_of_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/des_tag"
+                android:layout_alignParentEnd="true"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="4"
+                android:textSize="25sp"
+                android:fontFamily="serif-monospace"
+
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/no_of_person_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/no_of_days_label"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="4dp"
+                android:gravity="center"
+
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:padding="5dp"
+                android:text="No of Person"
+                android:layout_margin="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/no_of_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/no_of_days"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_margin="10dp"
+                android:text="4"
+                android:fontFamily="serif-monospace"
+
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/cost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/no_of_person_label"
+
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:text="Rs 200000"
+                android:textSize="25sp"
+
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"/>
+
+
+            <Button
+                android:id="@+id/book_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/no_of_person"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:text="Book"
+
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_margin="10dp"/>
+        </RelativeLayout>
+
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:indeterminate="true"
+
+        android:visibility="invisible" />
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:id="@+id/login_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:textSize="35sp"
+                android:text="Login"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:fontFamily="casual"
+                    />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:inputType="textPassword"
+                    android:fontFamily="casual"
+                    />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login -->"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:id="@+id/login_btn"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:fontFamily="casual"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sign_up"
+                android:text="Don't have account ?"
+                android:textSize="10dp"
+                android:layout_gravity="end"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

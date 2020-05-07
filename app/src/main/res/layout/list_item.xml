@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="15dp"
+    app:cardUseCompatPadding="false">
+
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_url"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+
+        android:background="@drawable/bck_rounded"
+
+        />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p_id"
+            android:gravity="start"
+            android:layout_below="@id/img_url"
+            android:text="KLKK"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="4dp"
+        android:layout_below="@id/img_url"
+        android:text="8"
+        android:padding="3dp"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/starting_place"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/p_id"
+        android:text="Delhi"
+        android:padding="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentStart="true"
+        android:textSize="25sp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/p_id"
+            android:id="@+id/location_name"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="4dp"
+            android:text="Chennai"
+            android:textSize="25sp"
+        android:padding="2dp"/>
+
+    <TextView
+        android:id="@+id/cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location_name"
+
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:text="Rs 200000"
+        android:textSize="20sp"
+        android:padding="2dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cost"
+        android:id="@+id/view_btn"
+        android:text="Tap to View Package"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:padding="5dp"/>
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

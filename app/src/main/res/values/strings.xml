@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Torippu</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Open" />
+    <string name="Close" />
+
+    <string name="sachin">
+        Sachin Sahil
+    </string>
+    <string name="shivam">
+        Shivam Mahale
+    </string>
+    <string name="guptaji">
+        Shreyansh Gupta
+    </string>
+    <string name="vikas">
+        Vikas Biradar
+    </string>
+    <string name="about_us">
+        Torippu offers great offers,some of the lowest airfares,
+        exclusive discounts and a seamless online booking experience.
+        Flight,hotel and holiday bookings through the mobile app is a
+        delightfully customer friendly experience and with just few clicks
+        you can complete your bookings and Torippu also featured overseas
+        travel destinations,which gives you a full selection of hotels
+        to suit any budget in the most popular destinations outside of India.
+        Torippu constantly adds value to its product and continues to offer
+        the best to its customers.
+    </string>
+</resources>

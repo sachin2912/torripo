@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <item android:id="@+id/account"
+
+            android:title="My Account"/>
+        <item android:id="@+id/vbook"
+
+            android:title="View Bookings"/>
+        <item android:id="@+id/vpack"
+
+            android:title="View Packages"/>
+        <item android:id="@+id/aboutus"
+            android:title="About Us"/>
+
+        <item android:id="@+id/developers"
+                android:title="Developer Team"/>
+
+
+        <item android:id="@+id/vlogout"
+            android:title="Log Out"/>
+
+
+
+</menu>
